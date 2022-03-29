@@ -9,6 +9,8 @@ def matrix(rows: int, cols: int, *, random_val:bool=False, init_value:float=0) -
 def vec2(x: float, y: float, /):
     return np.array([x, y])
 
+def vec3(x, y, z, /) -> np.ndarray:
+    return np.array([x, y, z])
 
 def vec(*args: float):
     for value in args:
@@ -17,8 +19,4 @@ def vec(*args: float):
                 print(f"Could not instanciate a vector with value {value=} of type {type(value)}. Returned None instead")
                 return None
     return np.array(args)
-
-
-if __name__ == "__main__":
-    m = matrix(2, 2, random_val=True)
-    print(m)
+    
