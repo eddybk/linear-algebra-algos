@@ -8,7 +8,7 @@ Let's begin by talking about the wrappers first:
 (if you find that boring just skip ahead to the next chapter)
 
 ## 1) Semantic wrappers for np.ndarray operations
----
+
 ### Ok... why?
 Working with raw function calls for np.ndarray methods can be a bit tedious,
 so there is no real reason, it just takes little time to implement and it helps with productivity in the long run.
