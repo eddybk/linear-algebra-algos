@@ -9,6 +9,8 @@ def matrix(rows: int, cols: int, *, random_val:bool=False, init_value:float=0) -
 def vec2(x: float, y: float, /):
     return np.array([x, y])
 
+def vec3(x, y, z, /) -> np.ndarray:
+    return np.array([x, y, z])
 
 def vec(*args: float):
     for value in args:
